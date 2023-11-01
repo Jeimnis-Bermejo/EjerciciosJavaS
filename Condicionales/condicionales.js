@@ -83,40 +83,120 @@ switch (color) {
 
 /*Ejercicio 8 */
 
-let numero1 = Number(prompt ("ingrese un numero del 1 al 100"))
+let numero1 = Number(prompt("ingrese un numero del 1 al 100"))
 let numero2 = Number(prompt("ingrese otro numero del 1 al 100"))
 let operacion = (prompt("Ingrese la operacion matematica que desee realizar"))
 switch (operacion) {
     case "suma":
-       alert (numero1+numero2)
+        alert(numero1 + numero2)
         break
     case "resta":
-        alert(numero1-numero2 )
+        alert(numero1 - numero2)
         break
     case "multiplicacion":
-        alert(numero1*numero2 )
+        alert(numero1 * numero2)
         break
-    case division:
-        alert(numero1/numero2)
+    case "division":
+        alert(numero1 / numero2)
         break
 }
-
 /*Ejercicio 9*/
 
-let people1={
-    nombre:Juan,
-    edad:55,
-    altura:1.70
+let people1 = {
+    nombre: "Juan",
+    edad: 55,
+    altura: 140,
 }
-let people2={
-    nombre:Jeimnis,
-    edad:31,
-    altura:163
+let people2 = {
+    nombre: "Jeimnis",
+    edad: 31,
+    altura: 163,
 }
-if (people1>people2){
-console.log (people1)
+if (people1.edad > people2.edad && people1.altura > people2.altura) {
+
+    console.log(`${people1.nombre} es la  persona mayor y la mas alta`)
 }
+
+else if (people1.edad > people2.edad && people1.altura < people2.altura) {
+    console.log(`${people1.nombre} es la persona mayor  y ${people2.nombre}  es la mas alta `)
+}
+else if (people1.edad < people2.edad && people1.altura > people2.altura) {
+    console.log(`${people2.nombre} es la  persona mayor pero ${people1.nombre}  es la mas alta`)
+}
+else {
+    onsole.log(`${people2.nombre} es la  persona mayor y la mas alta`)
+}
+
+
+
+/*Ejercicio 10*/
+let edad = (prompt("ingrese edad"))
+let altura = (prompt("ingrese altura"))
+let vision = (prompt("Ingrese su nivel de vision"))
+
+if (edad >= 18 && altura > 150 && vision >= 8) {
+    alert("Estas capacitado para conducir")
+}
+else {
+    alert(" No estas capacitado para conducir")
+}
+
+
+/*Ejercicio 11*/
+
+let eDad = (prompt("ingrese su edad"))
+
+if (eDad >= 0 && eDad < 13) {
+    alert("Infante")
+}
+else if (eDad >= 13 && eDad < 19) {
+    alert("Adolecente")
+}
+
+else if (eDad >= 45 && eDad < 99) {
+    alert("Anciano")
+}
+
+else if (eDad >= 19 && eDad < 45) {
+    alert("Mayor Joven")
+}
+else {
+    alert("¿En realidad tiene esa edad?")
+}
+
+
+
+/*Ejercicio 13*/
+
+let nombreCliente = (prompt("ingrese su nombre"))
+let pase = (prompt("ingrese su pase (vip o normal)"))
+
+if (nombreCliente === "Jeimnis" || pase === "vip");
+
+let entrada = (prompt("¿posee entrada? si/no "))
+if (entrada == "si");
+let Decisionentrada = (prompt("Deseas utilizar tu entrada"))
+if (Decisionentrada == "si")
+    alert("Bienvenido puede disfrutar del espectaculo");
+let comprarEntrada = (prompt("¿deseas comprar una entrada?"))
+if (comprarEntrada == "si");
+let dinerodisponible = (prompt("¿cuanto dinero disponible tiene?"))
+if (dinerodisponible > 1000)
+    alert("Gracias por su compra , puede ingresar , bienvenido")
 else
-{
-    console.log (people2)
-}
+    alert("Esperamos que en una proxima ocasion pueda ingresar, que tenga excelente noche")
+
+/*Ejercicio 14*/
+
+
+
+
+
+
+
+
+
+
+
+
+
